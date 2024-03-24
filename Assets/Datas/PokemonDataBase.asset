@@ -1,0 +1,70 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aec62a61529d227449770e88ca12a775, type: 3}
+  m_Name: PokemonDataBase
+  m_EditorClassIdentifier: 
+  datas:
+  - Name: Bulbizarre
+    size: 0.7
+    weight: 6.9
+    caption: "Au d\xE9but de sa vie, il se nourrit des nutriments accumul\xE9s dans
+      la graine sur son dos. Cela lui permet de grandir."
+    type: {fileID: 2800000, guid: 43c1167114aeb914b8d73f8f471910c5, type: 3}
+    weakness: {fileID: 2800000, guid: f7d634cf457b1f545b83d3cba8682751, type: 3}
+    Icon: {fileID: 2800000, guid: c6895a3cbaa82c3479558d6b514c34b7, type: 3}
+    Sexe: {fileID: 2800000, guid: 6847c3d4f82dc8c4c81b33d239e7ca4f, type: 3}
+  - Name: "Salam\xE8che"
+    size: 0.6
+    weight: 8.5
+    caption: "La flamme au bout de sa queue repr\xE9sente sa vitalit\xE9. Quand Salam\xE8che
+      n\u2019est pas au meilleur de sa forme, elle faiblit."
+    type: {fileID: 2800000, guid: f7d634cf457b1f545b83d3cba8682751, type: 3}
+    weakness: {fileID: 2800000, guid: 3004c4df82a645d41ad96ad52e102156, type: 3}
+    Icon: {fileID: 2800000, guid: 7d1fa633aaacb7546b47877388886970, type: 3}
+    Sexe: {fileID: 2800000, guid: 6847c3d4f82dc8c4c81b33d239e7ca4f, type: 3}
+  - Name: Dedenne
+    size: 0.2
+    weight: 2.2
+    caption: "Son corps \xE9tant petit et son organe g\xE9n\xE9rateur d\u2019\xE9lectricit\xE9
+      peu d\xE9velopp\xE9, il se recharge en aspirant l\u2019\xE9lectricit\xE9 des
+      maisons avec sa queue."
+    type: {fileID: 2800000, guid: 8a3182b53bec28b4590934e0809de63b, type: 3}
+    weakness: {fileID: 2800000, guid: dbc0b91530a41b349a1106e181a76aef, type: 3}
+    Icon: {fileID: 2800000, guid: 39ad65479ab45a7429c9a499ecad23c6, type: 3}
+    Sexe: {fileID: 2800000, guid: 79615664ae2798945a8757719a13b6b3, type: 3}
+  - Name: Arbok
+    size: 3.5
+    weight: 65
+    caption: "Le motif sur son corps ressemble \xE0 un visage mena\xE7ant. Les adversaires
+      les plus craintifs fuient \xE0 la seule vue de ce Pok\xE9mon."
+    type: {fileID: 2800000, guid: dbc0b91530a41b349a1106e181a76aef, type: 3}
+    weakness: {fileID: 0}
+    Icon: {fileID: 2800000, guid: 3c11fed49af7c584d8a28dd990a0bebd, type: 3}
+    Sexe: {fileID: 2800000, guid: 6847c3d4f82dc8c4c81b33d239e7ca4f, type: 3}
+  - Name: "Magn\xE9ti"
+    size: 0.3
+    weight: 6
+    caption: "Les ondes \xE9lectromagn\xE9tiques \xE9mises par ses extr\xE9mit\xE9s
+      lui permettent de d\xE9fier les lois de la gravit\xE9 et de flotter."
+    type: {fileID: 2800000, guid: 8a3182b53bec28b4590934e0809de63b, type: 3}
+    weakness: {fileID: 2800000, guid: dbc0b91530a41b349a1106e181a76aef, type: 3}
+    Icon: {fileID: 2800000, guid: badb1f921da5ca44aab81a08fffaf3e2, type: 3}
+    Sexe: {fileID: 2800000, guid: 6847c3d4f82dc8c4c81b33d239e7ca4f, type: 3}
+  - Name: Brutapode
+    size: 2.5
+    weight: 200.5
+    caption: "Apr\xE8s avoir saisi sa proie \xE0 l\u2019aide des griffes de son cou,
+      il la plaque au sol puis la transperce avec ses \xE9pines empoisonn\xE9es."
+    type: {fileID: 2800000, guid: dbc0b91530a41b349a1106e181a76aef, type: 3}
+    weakness: {fileID: 2800000, guid: 43c1167114aeb914b8d73f8f471910c5, type: 3}
+    Icon: {fileID: 2800000, guid: 2d2e76e4ef21f574589e68dc920ff33e, type: 3}
+    Sexe: {fileID: 2800000, guid: 79615664ae2798945a8757719a13b6b3, type: 3}

@@ -1,0 +1,1095 @@
+fileFormatVersion: 2
+guid: 078abfc186fc5b44c82ca1dac3954019
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 1
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: pokemon_attack_type_buttons_by_othienka_d9w39vm-fullview_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 966
+        width: 192
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be365b054eec7c846a5806372b03bab6
+      internalID: 938475559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_attack_type_buttons_by_othienka_d9w39vm-fullview_1
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 966
+        width: 192
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c28ca10780ad69e45af211a6af5273cf
+      internalID: 2135001975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_attack_type_buttons_by_othienka_d9w39vm-fullview_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 920
+        width: 192
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b04638c86aa93064fa709c542a49ae56
+      internalID: 1904136912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_attack_type_buttons_by_othienka_d9w39vm-fullview_3
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 920
+        width: 192
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6248a0e1f8cdbe4185ae27a99b6c20f
+      internalID: -1708958398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_attack_type_buttons_by_othienka_d9w39vm-fullview_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 874
+        width: 192
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 585bdcb1262d0cf4ebf682b6964a14b5
+      internalID: -1210976692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_attack_type_buttons_by_othienka_d9w39vm-fullview_5
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 874
+        width: 192
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42d36ffbce896704c962f1d9cdf5cbb0
+      internalID: -205963608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_attack_type_buttons_by_othienka_d9w39vm-fullview_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 828
+        width: 192
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56b7df645861a9a4aa7f5d87d136e338
+      internalID: 1816513915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_attack_type_buttons_by_othienka_d9w39vm-fullview_7
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 828
+        width: 192
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39ca1850f5553b84d91b73350112d609
+      internalID: -836236671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_attack_type_buttons_by_othienka_d9w39vm-fullview_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 782
+        width: 192
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52fd11d20ffce7f4a9870967261329d6
+      internalID: 2094272633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_attack_type_buttons_by_othienka_d9w39vm-fullview_9
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 782
+        width: 192
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47a200530b86a7345bcb37fd8549e8ee
+      internalID: -1675205403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_attack_type_buttons_by_othienka_d9w39vm-fullview_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 736
+        width: 192
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51e4c0a926095a94d95bc50db5206030
+      internalID: -285979751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_attack_type_buttons_by_othienka_d9w39vm-fullview_11
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 736
+        width: 192
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39fbc5555f5fc8447b9df8713471a70e
+      internalID: -196062198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_attack_type_buttons_by_othienka_d9w39vm-fullview_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 690
+        width: 192
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58e9d61643785aa478ab84825bef23a0
+      internalID: -869816885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_attack_type_buttons_by_othienka_d9w39vm-fullview_13
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 690
+        width: 192
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84a135c75fe2c43458ff51a637bd87bc
+      internalID: 1799922943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_attack_type_buttons_by_othienka_d9w39vm-fullview_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 644
+        width: 192
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7879004e5718e624298927ad09affc58
+      internalID: -1046643356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_attack_type_buttons_by_othienka_d9w39vm-fullview_15
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 644
+        width: 192
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d291e28f47fd2547aef09f656daf4e3
+      internalID: -449805971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_attack_type_buttons_by_othienka_d9w39vm-fullview_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 598
+        width: 192
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 171e42b25f61a05428f1df558fb4755c
+      internalID: -63190694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_attack_type_buttons_by_othienka_d9w39vm-fullview_17
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 598
+        width: 192
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca310c7f0435b5f4bb0e13e027e162eb
+      internalID: 504256249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_attack_type_buttons_by_othienka_d9w39vm-fullview_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 552
+        width: 192
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23f61e47631bc4e41b8b9f55570b6c8b
+      internalID: -735299860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_attack_type_buttons_by_othienka_d9w39vm-fullview_19
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 552
+        width: 192
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1014bdeaaaf767745b9439f540bc45af
+      internalID: -2146327438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_attack_type_buttons_by_othienka_d9w39vm-fullview_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 506
+        width: 192
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99d1ea8e15959854a949c67b88a73629
+      internalID: -2136901234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_attack_type_buttons_by_othienka_d9w39vm-fullview_21
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 506
+        width: 192
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd3adc907562059469aac259048eb2fb
+      internalID: 305560021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_attack_type_buttons_by_othienka_d9w39vm-fullview_22
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 460
+        width: 192
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffc1a5229d007fa46a5d9b1f0c7d7719
+      internalID: 380073716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_attack_type_buttons_by_othienka_d9w39vm-fullview_23
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 460
+        width: 192
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ea943cc2058a2740868b87633c5db85
+      internalID: -1568853486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_attack_type_buttons_by_othienka_d9w39vm-fullview_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 414
+        width: 192
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24b1c6cef44c5964b8ee67a98654b269
+      internalID: 2137573946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_attack_type_buttons_by_othienka_d9w39vm-fullview_25
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 414
+        width: 192
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e43d74cd177de449b0d577529ddd800
+      internalID: 1535183907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_attack_type_buttons_by_othienka_d9w39vm-fullview_26
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 368
+        width: 192
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a010fbbc005dd042950adde588e3306
+      internalID: -686902848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_attack_type_buttons_by_othienka_d9w39vm-fullview_27
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 368
+        width: 192
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f67d70cbe1750b41865b33a77c4f3f5
+      internalID: 623617777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_attack_type_buttons_by_othienka_d9w39vm-fullview_28
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 322
+        width: 192
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b42981fe5fa796a4181a7ce179a5cfe9
+      internalID: 1221890880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_attack_type_buttons_by_othienka_d9w39vm-fullview_29
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 322
+        width: 192
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d5af01b9d6e2794193cc7be8c81cdf0
+      internalID: -891454569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_attack_type_buttons_by_othienka_d9w39vm-fullview_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 276
+        width: 192
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cd469d1d51194c4a8c011ad3e1346dd
+      internalID: -1930825252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_attack_type_buttons_by_othienka_d9w39vm-fullview_31
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 276
+        width: 192
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28121f282de761c46ab225576d8251de
+      internalID: 1105348960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_attack_type_buttons_by_othienka_d9w39vm-fullview_32
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 230
+        width: 192
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2065a385c1e7503408eb7aa4b52add1b
+      internalID: -1645683923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_attack_type_buttons_by_othienka_d9w39vm-fullview_33
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 230
+        width: 192
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91086b87a65f31f47b52e2a5a84f99fa
+      internalID: -1981629618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_attack_type_buttons_by_othienka_d9w39vm-fullview_34
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 184
+        width: 192
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 221ea49dd7aa1bb438a9536d56c81c7a
+      internalID: -1054300579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_attack_type_buttons_by_othienka_d9w39vm-fullview_35
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 184
+        width: 192
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69cd6ef822f2bfe40bb84ba343ad5916
+      internalID: 1802184760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_attack_type_buttons_by_othienka_d9w39vm-fullview_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 138
+        width: 192
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 074349d4332b8d144a39976d5de37fe7
+      internalID: -731732238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_attack_type_buttons_by_othienka_d9w39vm-fullview_37
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 138
+        width: 192
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6df647f3442cfbe4db9a2f9ebb8b735a
+      internalID: 583789464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_attack_type_buttons_by_othienka_d9w39vm-fullview_38
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 92
+        width: 192
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 304792f3481a8d545a9abf6e64cb9e2b
+      internalID: 684295228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_attack_type_buttons_by_othienka_d9w39vm-fullview_39
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 92
+        width: 192
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88e32e9830ca3104089dcfd549627773
+      internalID: -839950025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_attack_type_buttons_by_othienka_d9w39vm-fullview_40
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 46
+        width: 192
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ba3604c0a02b324face6e12433ffb8e
+      internalID: -1030222220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_attack_type_buttons_by_othienka_d9w39vm-fullview_41
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 46
+        width: 192
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43e6431e3d046bc4da0db12a72915213
+      internalID: 800039369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_attack_type_buttons_by_othienka_d9w39vm-fullview_42
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 192
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e76657f2c2605fd409f153015bf246cc
+      internalID: -945269089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_attack_type_buttons_by_othienka_d9w39vm-fullview_43
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 192
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ee5962bc8416ef45899c926c5a9dddf
+      internalID: 981518996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      pokemon_attack_type_buttons_by_othienka_d9w39vm-fullview_0: 938475559
+      pokemon_attack_type_buttons_by_othienka_d9w39vm-fullview_1: 2135001975
+      pokemon_attack_type_buttons_by_othienka_d9w39vm-fullview_10: -285979751
+      pokemon_attack_type_buttons_by_othienka_d9w39vm-fullview_11: -196062198
+      pokemon_attack_type_buttons_by_othienka_d9w39vm-fullview_12: -869816885
+      pokemon_attack_type_buttons_by_othienka_d9w39vm-fullview_13: 1799922943
+      pokemon_attack_type_buttons_by_othienka_d9w39vm-fullview_14: -1046643356
+      pokemon_attack_type_buttons_by_othienka_d9w39vm-fullview_15: -449805971
+      pokemon_attack_type_buttons_by_othienka_d9w39vm-fullview_16: -63190694
+      pokemon_attack_type_buttons_by_othienka_d9w39vm-fullview_17: 504256249
+      pokemon_attack_type_buttons_by_othienka_d9w39vm-fullview_18: -735299860
+      pokemon_attack_type_buttons_by_othienka_d9w39vm-fullview_19: -2146327438
+      pokemon_attack_type_buttons_by_othienka_d9w39vm-fullview_2: 1904136912
+      pokemon_attack_type_buttons_by_othienka_d9w39vm-fullview_20: -2136901234
+      pokemon_attack_type_buttons_by_othienka_d9w39vm-fullview_21: 305560021
+      pokemon_attack_type_buttons_by_othienka_d9w39vm-fullview_22: 380073716
+      pokemon_attack_type_buttons_by_othienka_d9w39vm-fullview_23: -1568853486
+      pokemon_attack_type_buttons_by_othienka_d9w39vm-fullview_24: 2137573946
+      pokemon_attack_type_buttons_by_othienka_d9w39vm-fullview_25: 1535183907
+      pokemon_attack_type_buttons_by_othienka_d9w39vm-fullview_26: -686902848
+      pokemon_attack_type_buttons_by_othienka_d9w39vm-fullview_27: 623617777
+      pokemon_attack_type_buttons_by_othienka_d9w39vm-fullview_28: 1221890880
+      pokemon_attack_type_buttons_by_othienka_d9w39vm-fullview_29: -891454569
+      pokemon_attack_type_buttons_by_othienka_d9w39vm-fullview_3: -1708958398
+      pokemon_attack_type_buttons_by_othienka_d9w39vm-fullview_30: -1930825252
+      pokemon_attack_type_buttons_by_othienka_d9w39vm-fullview_31: 1105348960
+      pokemon_attack_type_buttons_by_othienka_d9w39vm-fullview_32: -1645683923
+      pokemon_attack_type_buttons_by_othienka_d9w39vm-fullview_33: -1981629618
+      pokemon_attack_type_buttons_by_othienka_d9w39vm-fullview_34: -1054300579
+      pokemon_attack_type_buttons_by_othienka_d9w39vm-fullview_35: 1802184760
+      pokemon_attack_type_buttons_by_othienka_d9w39vm-fullview_36: -731732238
+      pokemon_attack_type_buttons_by_othienka_d9w39vm-fullview_37: 583789464
+      pokemon_attack_type_buttons_by_othienka_d9w39vm-fullview_38: 684295228
+      pokemon_attack_type_buttons_by_othienka_d9w39vm-fullview_39: -839950025
+      pokemon_attack_type_buttons_by_othienka_d9w39vm-fullview_4: -1210976692
+      pokemon_attack_type_buttons_by_othienka_d9w39vm-fullview_40: -1030222220
+      pokemon_attack_type_buttons_by_othienka_d9w39vm-fullview_41: 800039369
+      pokemon_attack_type_buttons_by_othienka_d9w39vm-fullview_42: -945269089
+      pokemon_attack_type_buttons_by_othienka_d9w39vm-fullview_43: 981518996
+      pokemon_attack_type_buttons_by_othienka_d9w39vm-fullview_5: -205963608
+      pokemon_attack_type_buttons_by_othienka_d9w39vm-fullview_6: 1816513915
+      pokemon_attack_type_buttons_by_othienka_d9w39vm-fullview_7: -836236671
+      pokemon_attack_type_buttons_by_othienka_d9w39vm-fullview_8: 2094272633
+      pokemon_attack_type_buttons_by_othienka_d9w39vm-fullview_9: -1675205403
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
