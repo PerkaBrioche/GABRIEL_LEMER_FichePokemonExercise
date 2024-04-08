@@ -14,6 +14,7 @@ public class PokemonInfoController : MonoBehaviour
     public Button BUTTON_ChoosePokemon;
     public int INT_PokemonChoosed1;
     public int INT_PokemonChoosed2;
+    public int ChooseNumber;
     public bool BOOL_FirstPokemonChoose;
     public List<Slider> SliderStats;
     public Button BUTTON_ChangeRight;
@@ -25,7 +26,7 @@ public class PokemonInfoController : MonoBehaviour
     [SerializeField] private RawImage _ImgIcon;
     [SerializeField] private RawImage _ImgIcon2;
     [SerializeField] private RawImage _ImgType;
-    [SerializeField] private RawImage _IMGSexe;
+    [SerializeField] private RawImage _ImgWeakness;
     [SerializeField] private TextMeshProUGUI _txtName;
     [SerializeField] private TextMeshProUGUI _txtsize;
     [SerializeField] private TextMeshProUGUI _txtweight;
@@ -48,17 +49,28 @@ public class PokemonInfoController : MonoBehaviour
         if (PokemonIndex == INT_PokemonChoosed1 || PokemonIndex == INT_PokemonChoosed2)
         {
             _ImgIcon.color = Color.gray;
+            BUTTON_ChoosePokemon.enabled = false;
         }
         else
         {
+            if (ChooseNumber <2 )
+            {
+                BUTTON_ChoosePokemon.enabled = true;
+            }
+            else
+            {
+                BUTTON_ChoosePokemon.enabled = false;
+            }
+
             _ImgIcon.color = Color.white;
 
         }
         PokemonData data = PokemonDataBaseManager.GetData(PokemonIndex);
         _ImgIcon.texture = data.Icon;
         _ImgIcon2.texture = data.Icon;
+        _ImgWeakness.texture = data.WeaknessImg;
+
         _ImgType.texture = data.type;
-        _IMGSexe.texture = data.Sexe;
         _txtName.text = data.Name;
         _txtsize.text = data.size.ToString() + "M";
         _txtweight.text = data.weight.ToString() + "KG";
@@ -73,7 +85,7 @@ public class PokemonInfoController : MonoBehaviour
         // {
         //     SliderStats[i].
         // }
-        print(PokemonDataBaseManager.PokemonDataBase.datas.Count -1);
+//        print(PokemonDataBaseManager.PokemonDataBase.datas.Count -1);
         if (PokemonIndex > 0)
         {
             BUTTON_ChangeLeft.interactable = true;
@@ -136,12 +148,13 @@ public class PokemonInfoController : MonoBehaviour
         {
             INT_PokemonChoosed1 = PokemonIndex;
             BOOL_FirstPokemonChoose = true;
+            ChooseNumber++;
         }
         else
         {
             INT_PokemonChoosed2 = PokemonIndex;
             _ImgIcon.color = Color.gray;
-            
+            ChooseNumber++;
             BUTTON_StartFight.interactable = true;
             BUTTON_StartFight.transform.GetChild(0).GetComponent<TextMeshProUGUI>().color = new Color(0,0,0,1);
             

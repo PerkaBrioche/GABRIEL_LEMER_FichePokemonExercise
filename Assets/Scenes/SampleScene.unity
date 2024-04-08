@@ -225,7 +225,7 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 16777215
+    rgba: 4294967295
   m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
@@ -243,8 +243,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 15.7
-  m_fontSizeBase: 15.7
+  m_fontSize: 11.49
+  m_fontSizeBase: 11.49
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1191,7 +1191,7 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
+    rgba: 16777215
   m_fontColor: {r: 1, g: 1, b: 1, a: 0}
   m_enableVertexGradient: 0
   m_colorMode: 3
@@ -1273,6 +1273,7 @@ GameObject:
   - component: {fileID: 381230615}
   - component: {fileID: 381230619}
   - component: {fileID: 381230620}
+  - component: {fileID: 381230621}
   m_Layer: 5
   m_Name: COMBAT
   m_TagString: Untagged
@@ -1309,10 +1310,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
@@ -1384,10 +1385,15 @@ MonoBehaviour:
   DamageText2: {fileID: 1223175998}
   FightAnim: {fileID: 381230620}
   SpecialUsed: 0
+  Heal: 0
+  Hypnotised: 0
   ShieldUsed: 0
+  AttackFailed: 0
+  SkipTurn: 0
   PokemonAttack: 0
   AttackAmount: 0
   OldLife: 0
+  PsychicUsed: 0
   PokemonVictim: 0
   FightStart: 0
   FirstStart: 0
@@ -1418,6 +1424,19 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &381230621
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 381230614}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ab1b74e6455f5d4c977948e87bc65ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PokemonDataBase: {fileID: 11400000, guid: 9325447befd019d409d7b6ea31896370, type: 2}
 --- !u!1 &389587351
 GameObject:
   m_ObjectHideFlags: 0
@@ -1655,7 +1674,7 @@ GameObject:
   - component: {fileID: 431099143}
   - component: {fileID: 431099142}
   m_Layer: 5
-  m_Name: TXT_sexe
+  m_Name: TXT_Weakness
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1701,7 +1720,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'S:'
+  m_text: 'W :'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2920079e371a0c34c9a3e63a6ac7bbe7, type: 2}
   m_sharedMaterial: {fileID: -1490357147494134941, guid: 2920079e371a0c34c9a3e63a6ac7bbe7, type: 2}
@@ -1739,7 +1758,7 @@ MonoBehaviour:
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
-  m_wordSpacing: 0
+  m_wordSpacing: -66.72
   m_lineSpacing: 0
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
@@ -1764,7 +1783,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 71.826065, y: 0, z: -261.37408, w: 0}
+  m_margin: {x: 30.308716, y: 0, z: 105.894615, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -2160,7 +2179,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -4.4439087, y: -0.00030517578}
+  m_AnchoredPosition: {x: -4.4438477, y: -0.00024414062}
   m_SizeDelta: {x: 206383, y: 115551}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &559921828
@@ -2812,9 +2831,9 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1986488205}
-  - {fileID: 431099141}
-  - {fileID: 526648323}
   - {fileID: 1290226462}
+  - {fileID: 526648323}
+  - {fileID: 431099141}
   m_Father: {fileID: 757985062}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -3202,7 +3221,7 @@ GameObject:
   - component: {fileID: 884340844}
   - component: {fileID: 884340843}
   m_Layer: 5
-  m_Name: IMG_actualSexe
+  m_Name: IMG_actualWeakness
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3224,7 +3243,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -13.2, y: -10.999783}
+  m_AnchoredPosition: {x: -20, y: -10.999783}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &884340843
@@ -3625,7 +3644,7 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 0
+    rgba: 4278190080
   m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
@@ -4343,7 +4362,7 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 16777215
+    rgba: 4294967295
   m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
@@ -4361,8 +4380,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 15.7
-  m_fontSizeBase: 15.7
+  m_fontSize: 11.49
+  m_fontSizeBase: 11.49
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -4790,6 +4809,140 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1290226461}
   m_CullTransparentMesh: 1
+--- !u!1 &1295499257
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1295499258}
+  - component: {fileID: 1295499260}
+  - component: {fileID: 1295499259}
+  m_Layer: 5
+  m_Name: TEXT_Name2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1295499258
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1295499257}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1404120482}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 4.285187, y: 72}
+  m_SizeDelta: {x: 200, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1295499259
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1295499257}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: 80/80
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 2920079e371a0c34c9a3e63a6ac7bbe7, type: 2}
+  m_sharedMaterial: {fileID: -1490357147494134941, guid: 2920079e371a0c34c9a3e63a6ac7bbe7, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 10.03
+  m_fontSizeBase: 10.03
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 46.403515, y: 0, z: 54.70661, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &1295499260
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1295499257}
+  m_CullTransparentMesh: 1
 --- !u!1 &1299497196
 GameObject:
   m_ObjectHideFlags: 0
@@ -4826,7 +4979,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 7.999939, y: -6}
+  m_AnchoredPosition: {x: 8, y: -6}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1299497198
@@ -5056,6 +5209,140 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1318401107}
+  m_CullTransparentMesh: 1
+--- !u!1 &1320847888
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1320847889}
+  - component: {fileID: 1320847891}
+  - component: {fileID: 1320847890}
+  m_Layer: 5
+  m_Name: TEXT_Name
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1320847889
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1320847888}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1391836678}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 72}
+  m_SizeDelta: {x: 200, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1320847890
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1320847888}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: 80/80
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 2920079e371a0c34c9a3e63a6ac7bbe7, type: 2}
+  m_sharedMaterial: {fileID: -1490357147494134941, guid: 2920079e371a0c34c9a3e63a6ac7bbe7, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 10.03
+  m_fontSizeBase: 10.03
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 49.86699, y: 0, z: 50.08864, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &1320847891
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1320847888}
   m_CullTransparentMesh: 1
 --- !u!1 &1322775103
 GameObject:
@@ -5291,6 +5578,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1165913101}
+  - {fileID: 1320847889}
   - {fileID: 650172897}
   - {fileID: 233873518}
   m_Father: {fileID: 381230618}
@@ -5347,16 +5635,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4cc1e3358c8e08f4c8aa8d58ac48c757, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PokemonAnim: {fileID: 0}
+  PokemonDataBase: {fileID: 11400000, guid: 9325447befd019d409d7b6ea31896370, type: 2}
   First: 1
   IndexPokemon: 0
-  OldLife: 0
-  PokemonDataBaseManager: {fileID: 0}
   PokemonInfoController: {fileID: 1946752565}
-  RAWIMAGE_Pokemon: {fileID: 0}
-  TMP_LifePokemon: {fileID: 0}
+  RAWIMAGE_Pokemon: {fileID: 1391836679}
+  TMP_LifePokemon: {fileID: 1165913102}
+  TMP_NamePokemon: {fileID: 1320847890}
   Life: 0
-  MaxLife: 0
+  maxLife: 0
 --- !u!1 &1404120481
 GameObject:
   m_ObjectHideFlags: 0
@@ -5389,6 +5676,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 38932604}
+  - {fileID: 1295499258}
   - {fileID: 1223175997}
   - {fileID: 1481040784}
   m_Father: {fileID: 381230618}
@@ -5445,16 +5733,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4cc1e3358c8e08f4c8aa8d58ac48c757, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PokemonAnim: {fileID: 0}
+  PokemonDataBase: {fileID: 11400000, guid: 9325447befd019d409d7b6ea31896370, type: 2}
   First: 0
   IndexPokemon: 0
-  OldLife: 0
-  PokemonDataBaseManager: {fileID: 0}
   PokemonInfoController: {fileID: 1946752565}
-  RAWIMAGE_Pokemon: {fileID: 0}
-  TMP_LifePokemon: {fileID: 0}
+  RAWIMAGE_Pokemon: {fileID: 1404120483}
+  TMP_LifePokemon: {fileID: 38932605}
+  TMP_NamePokemon: {fileID: 1295499259}
   Life: 0
-  MaxLife: 0
+  maxLife: 0
 --- !u!1 &1422230962
 GameObject:
   m_ObjectHideFlags: 0
@@ -6339,7 +6626,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 317342983}
   m_Direction: 0
   m_MinValue: 0
-  m_MaxValue: 100
+  m_MaxValue: 170
   m_WholeNumbers: 1
   m_Value: 1
   m_OnValueChanged:
@@ -6730,7 +7017,9 @@ MonoBehaviour:
     caption: 
     type: {fileID: 0}
     Icon: {fileID: 0}
-    Sexe: {fileID: 0}
+    WeaknessImg: {fileID: 0}
+    MyType: 0
+    MyWeakness: 0
     stats:
       pv: 0
       atk: 0
@@ -6738,6 +7027,8 @@ MonoBehaviour:
       atkSpe: 0
       defSpe: 0
       speed: 0
+    PhysicalAttacksList: []
+    PsychickAttacksList: []
 --- !u!1 &1756620801
 GameObject:
   m_ObjectHideFlags: 0
@@ -7699,6 +7990,7 @@ MonoBehaviour:
   BUTTON_ChoosePokemon: {fileID: 1973664189}
   INT_PokemonChoosed1: 8
   INT_PokemonChoosed2: 8
+  ChooseNumber: 0
   BOOL_FirstPokemonChoose: 0
   SliderStats:
   - {fileID: 1621787337}
@@ -7716,7 +8008,7 @@ MonoBehaviour:
   _ImgIcon: {fileID: 2007173034}
   _ImgIcon2: {fileID: 1941241743}
   _ImgType: {fileID: 1287938427}
-  _IMGSexe: {fileID: 884340843}
+  _ImgWeakness: {fileID: 884340843}
   _txtName: {fileID: 1551602193}
   _txtsize: {fileID: 195613236}
   _txtweight: {fileID: 2136970910}

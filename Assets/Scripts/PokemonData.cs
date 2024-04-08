@@ -1,7 +1,10 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using JetBrains.Annotations;
 using UnityEngine;
 using UnityEngine.UI;
+using Random = UnityEngine.Random;
 
 [System.Serializable]
 public class PokemonData
@@ -21,10 +24,10 @@ public class PokemonData
         {
             Stats stats = new();
             
-            stats.pv = Random.Range(20, 99);
-            stats.atk = Random.Range(10, 40);
+            stats.pv = Random.Range(50, 170);
+            stats.atk = Random.Range(10, 30);
             stats.def = Random.Range(5, 99);
-            stats.atkSpe = Random.Range(10, 40);
+            stats.atkSpe = Random.Range(5, 25);
             stats.defSpe = Random.Range(5, 99);
             stats.speed = Random.Range(5, 30);
             return stats;
@@ -38,11 +41,25 @@ public class PokemonData
     public string Name;
     public float size;
     public float weight;
-    public string caption;
+    [TextArea]public string caption;
     public Texture type;
     public Texture Icon;
-    public Texture Sexe;
+    public Texture WeaknessImg;
+   [Serializable] public enum Types
+    {
+        Eletrik,
+        water,
+        grass,
+        fire,
+        poison,
+    }
+   
+    public Types MyType;
+    public Types MyWeakness;
+
     public Stats stats;
+    public PhysicalAttack[] PhysicalAttacksList;
+    public PsychickAttack[] PsychickAttacksList;
     
 
 
@@ -56,6 +73,25 @@ public class PokemonData
         this.Icon = icon;
         this.caption = caption;
         this.stats = stats;
+    }
+
+    [System.Serializable]
+    public class PhysicalAttack
+    {
+        public string AttackName;
+        [TextArea] public string AttackCaption;
+        public int AttackDamage;
+        public int AttackID;
+        public int AttackPrecision;
+    }
+    [System.Serializable]
+    public class PsychickAttack
+    {
+        public string AttackName;
+        [TextArea] public string AttackCaption;
+        public int AttackDamage;
+        public int AttackID;
+        public int AttackPrecision;
     }
 
 

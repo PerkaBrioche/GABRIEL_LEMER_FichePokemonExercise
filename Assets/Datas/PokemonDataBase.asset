@@ -17,54 +17,230 @@ MonoBehaviour:
     size: 0.7
     weight: 6.9
     caption: "Au d\xE9but de sa vie, il se nourrit des nutriments accumul\xE9s dans
-      la graine sur son dos. Cela lui permet de grandir."
+      la graine sur son dos. Cela lui permet de grandir.\n\npouvoirs : peut utiliser
+      une graine de vie pour se soigner"
     type: {fileID: 2800000, guid: 43c1167114aeb914b8d73f8f471910c5, type: 3}
-    weakness: {fileID: 2800000, guid: f7d634cf457b1f545b83d3cba8682751, type: 3}
     Icon: {fileID: 2800000, guid: c6895a3cbaa82c3479558d6b514c34b7, type: 3}
-    Sexe: {fileID: 2800000, guid: 6847c3d4f82dc8c4c81b33d239e7ca4f, type: 3}
+    WeaknessImg: {fileID: 2800000, guid: f7d634cf457b1f545b83d3cba8682751, type: 3}
+    MyType: 2
+    MyWeakness: 3
+    stats:
+      pv: 77
+      atk: 21
+      def: 27
+      atkSpe: 8
+      defSpe: 11
+      speed: 23
+    PhysicalAttacksList:
+    - AttackName: Feuille tranchante
+      AttackCaption: 
+      AttackDamage: 4
+      AttackID: 0
+      AttackPrecision: 17
+    - AttackName: Coup de patte
+      AttackCaption: 
+      AttackDamage: 3
+      AttackID: 0
+      AttackPrecision: 19
+    PsychickAttacksList:
+    - AttackName: Floraison
+      AttackCaption: 
+      AttackDamage: 12
+      AttackID: 1
+      AttackPrecision: 12
+    - AttackName: Graine de vie
+      AttackCaption: 
+      AttackDamage: 0
+      AttackID: 19
+      AttackPrecision: 20
   - Name: "Salam\xE8che"
     size: 0.6
     weight: 8.5
     caption: "La flamme au bout de sa queue repr\xE9sente sa vitalit\xE9. Quand Salam\xE8che
       n\u2019est pas au meilleur de sa forme, elle faiblit."
     type: {fileID: 2800000, guid: f7d634cf457b1f545b83d3cba8682751, type: 3}
-    weakness: {fileID: 2800000, guid: 3004c4df82a645d41ad96ad52e102156, type: 3}
     Icon: {fileID: 2800000, guid: 7d1fa633aaacb7546b47877388886970, type: 3}
-    Sexe: {fileID: 2800000, guid: 6847c3d4f82dc8c4c81b33d239e7ca4f, type: 3}
+    WeaknessImg: {fileID: 2800000, guid: 3004c4df82a645d41ad96ad52e102156, type: 3}
+    MyType: 3
+    MyWeakness: 1
+    stats:
+      pv: 152
+      atk: 29
+      def: 79
+      atkSpe: 19
+      defSpe: 74
+      speed: 7
+    PhysicalAttacksList:
+    - AttackName: Griffes
+      AttackCaption: 
+      AttackDamage: 3
+      AttackID: 2
+      AttackPrecision: 18
+    - AttackName: Morsure
+      AttackCaption: 
+      AttackDamage: 6
+      AttackID: 3
+      AttackPrecision: 14
+    PsychickAttacksList:
+    - AttackName: Boule de feu
+      AttackCaption: 
+      AttackDamage: 13
+      AttackID: 4
+      AttackPrecision: 14
+    - AttackName: Zone de feu
+      AttackCaption: 
+      AttackDamage: 16
+      AttackID: 5
+      AttackPrecision: 8
   - Name: Dedenne
     size: 0.2
     weight: 2.2
     caption: "Son corps \xE9tant petit et son organe g\xE9n\xE9rateur d\u2019\xE9lectricit\xE9
       peu d\xE9velopp\xE9, il se recharge en aspirant l\u2019\xE9lectricit\xE9 des
-      maisons avec sa queue."
+      maisons avec sa queue.\n\nPouvoirs : Fait tomber un \xE9clair sur son ennemi
+      provoquant des d\xE9gats \xE9normes"
     type: {fileID: 2800000, guid: 8a3182b53bec28b4590934e0809de63b, type: 3}
-    weakness: {fileID: 2800000, guid: dbc0b91530a41b349a1106e181a76aef, type: 3}
     Icon: {fileID: 2800000, guid: 39ad65479ab45a7429c9a499ecad23c6, type: 3}
-    Sexe: {fileID: 2800000, guid: 79615664ae2798945a8757719a13b6b3, type: 3}
+    WeaknessImg: {fileID: 2800000, guid: dbc0b91530a41b349a1106e181a76aef, type: 3}
+    MyType: 0
+    MyWeakness: 4
+    stats:
+      pv: 35
+      atk: 25
+      def: 89
+      atkSpe: 20
+      defSpe: 94
+      speed: 16
+    PhysicalAttacksList:
+    - AttackName: Griffes
+      AttackCaption: 
+      AttackDamage: 4
+      AttackID: 6
+      AttackPrecision: 19
+    PsychickAttacksList:
+    - AttackName: "D\xE9charge Electrique"
+      AttackCaption: 
+      AttackDamage: 9
+      AttackID: 7
+      AttackPrecision: 18
+    - AttackName: Eclair
+      AttackCaption: 
+      AttackDamage: 38
+      AttackID: 8
+      AttackPrecision: 7
   - Name: Arbok
     size: 3.5
     weight: 65
     caption: "Le motif sur son corps ressemble \xE0 un visage mena\xE7ant. Les adversaires
-      les plus craintifs fuient \xE0 la seule vue de ce Pok\xE9mon."
+      les plus craintifs fuient \xE0 la seule vue de ce Pok\xE9mon.\n\nPouvoirs :
+      Hypnotiser son adversaire l'emp\xEAchant d'attaquer sur plusieurs tours"
     type: {fileID: 2800000, guid: dbc0b91530a41b349a1106e181a76aef, type: 3}
-    weakness: {fileID: 0}
     Icon: {fileID: 2800000, guid: 3c11fed49af7c584d8a28dd990a0bebd, type: 3}
-    Sexe: {fileID: 2800000, guid: 6847c3d4f82dc8c4c81b33d239e7ca4f, type: 3}
+    WeaknessImg: {fileID: 2800000, guid: 43c1167114aeb914b8d73f8f471910c5, type: 3}
+    MyType: 4
+    MyWeakness: 2
+    stats:
+      pv: 159
+      atk: 15
+      def: 18
+      atkSpe: 8
+      defSpe: 22
+      speed: 25
+    PhysicalAttacksList:
+    - AttackName: Morsure
+      AttackCaption: 
+      AttackDamage: 9
+      AttackID: 9
+      AttackPrecision: 15
+    - AttackName: Coup de queue
+      AttackCaption: 
+      AttackDamage: 6
+      AttackID: 10
+      AttackPrecision: 17
+    PsychickAttacksList:
+    - AttackName: "Morsure empoison\xE9e"
+      AttackCaption: 
+      AttackDamage: 15
+      AttackID: 11
+      AttackPrecision: 15
+    - AttackName: Hypnotisation
+      AttackCaption: 
+      AttackDamage: 0
+      AttackID: 12
+      AttackPrecision: 10
   - Name: "Magn\xE9ti"
     size: 0.3
     weight: 6
     caption: "Les ondes \xE9lectromagn\xE9tiques \xE9mises par ses extr\xE9mit\xE9s
-      lui permettent de d\xE9fier les lois de la gravit\xE9 et de flotter."
+      lui permettent de d\xE9fier les lois de la gravit\xE9 et de flotter.\n\npouvoirs
+      : Inflige de gros d\xE9gats Psychique qui sont s\xFBrs de ne pas rater l'ennemi"
     type: {fileID: 2800000, guid: 8a3182b53bec28b4590934e0809de63b, type: 3}
-    weakness: {fileID: 2800000, guid: dbc0b91530a41b349a1106e181a76aef, type: 3}
     Icon: {fileID: 2800000, guid: badb1f921da5ca44aab81a08fffaf3e2, type: 3}
-    Sexe: {fileID: 2800000, guid: 6847c3d4f82dc8c4c81b33d239e7ca4f, type: 3}
+    WeaknessImg: {fileID: 2800000, guid: 3004c4df82a645d41ad96ad52e102156, type: 3}
+    MyType: 0
+    MyWeakness: 1
+    stats:
+      pv: 71
+      atk: 25
+      def: 64
+      atkSpe: 19
+      defSpe: 90
+      speed: 26
+    PhysicalAttacksList:
+    - AttackName: Coup de fer
+      AttackCaption: 
+      AttackDamage: 4
+      AttackID: 13
+      AttackPrecision: 17
+    PsychickAttacksList:
+    - AttackName: "D\xE9chargement \xE9lectrique"
+      AttackCaption: 
+      AttackDamage: 12
+      AttackID: 14
+      AttackPrecision: 20
+    - AttackName: "Magn\xE9tisme"
+      AttackCaption: 
+      AttackDamage: 14
+      AttackID: 15
+      AttackPrecision: 20
   - Name: Brutapode
     size: 2.5
     weight: 200.5
     caption: "Apr\xE8s avoir saisi sa proie \xE0 l\u2019aide des griffes de son cou,
-      il la plaque au sol puis la transperce avec ses \xE9pines empoisonn\xE9es."
+      il la plaque au sol puis la transperce avec ses \xE9pines empoisonn\xE9es.\n\n\nPouvoirs
+      : Brutapode poss\xE8de une force hors norme et d\xE9structrice causant beaucoup
+      de d\xE9gat au corps \xE0 corps mais quasiment aucun d'attaque sp\xE9cial"
     type: {fileID: 2800000, guid: dbc0b91530a41b349a1106e181a76aef, type: 3}
-    weakness: {fileID: 2800000, guid: 43c1167114aeb914b8d73f8f471910c5, type: 3}
     Icon: {fileID: 2800000, guid: 2d2e76e4ef21f574589e68dc920ff33e, type: 3}
-    Sexe: {fileID: 2800000, guid: 79615664ae2798945a8757719a13b6b3, type: 3}
+    WeaknessImg: {fileID: 2800000, guid: 43c1167114aeb914b8d73f8f471910c5, type: 3}
+    MyType: 4
+    MyWeakness: 2
+    stats:
+      pv: 76
+      atk: 13
+      def: 87
+      atkSpe: 10
+      defSpe: 44
+      speed: 10
+    PhysicalAttacksList:
+    - AttackName: Charge
+      AttackCaption: 
+      AttackDamage: 15
+      AttackID: 16
+      AttackPrecision: 14
+    - AttackName: Coups de corne
+      AttackCaption: 
+      AttackDamage: 17
+      AttackID: 17
+      AttackPrecision: 18
+    PsychickAttacksList:
+    - AttackName: Menace
+      AttackCaption: 
+      AttackDamage: -5
+      AttackID: 18
+      AttackPrecision: 1
+    - AttackName: Confrontation
+      AttackCaption: 
+      AttackDamage: -5
+      AttackID: 18
+      AttackPrecision: 1

@@ -14,10 +14,15 @@ public class PokemonFightMangaer : MonoBehaviour
 
     public Animator FightAnim;
     public bool SpecialUsed;
+    public bool Heal;
+    public bool Hypnotised;
     public bool ShieldUsed;
+    public bool AttackFailed;
+    public int SkipTurn;
     public int PokemonAttack;
     public int AttackAmount;
     public int OldLife;
+    public int PsychicUsed;
     public int PokemonVictim;
     public bool FightStart;
     public bool FirstStart;
@@ -43,6 +48,8 @@ public class PokemonFightMangaer : MonoBehaviour
                 StopCoroutine("Attack");
                 FightStart = false;
                 StartCoroutine("EndGame");
+                SpawnText("Le combat est terminé !");
+
             }
             
             IndexPokemon1 = PokemonInfoController.INT_PokemonChoosed1;
@@ -57,8 +64,7 @@ public class PokemonFightMangaer : MonoBehaviour
                 if (PokemonDataBaseManager.PokemonDataBase.datas[IndexPokemon1].stats.speed >
                     PokemonDataBaseManager.PokemonDataBase.datas[IndexPokemon2].stats.speed)
                 {
-                    SpawnText(PokemonDataBaseManager.PokemonDataBase.datas[IndexPokemon1].Name +
-                              " Commence le combat !");
+                    SpawnText(PokemonDataBaseManager.PokemonDataBase.datas[IndexPokemon1].Name + " Commence le combat !");
                     PokemonAttack = IndexPokemon1;
                     PokemonVictim = IndexPokemon2;
                 }
@@ -83,26 +89,75 @@ public class PokemonFightMangaer : MonoBehaviour
 
         if (Random.Range(0, 3) == 1)
         {
-            SpawnText(PokemonDataBaseManager.PokemonDataBase.datas[PokemonAttack].Name + " Utilise son attaque spéciale");
-            AttackAmount = PokemonDataBaseManager.PokemonDataBase.datas[PokemonAttack].stats.atkSpe;
+            ShieldUsed = true;
+            int PsychicUsed = Random.Range(0, PokemonDataBaseManager.PokemonDataBase.datas[PokemonAttack].PsychickAttacksList.Length);
+            SpawnText(PokemonDataBaseManager.PokemonDataBase.datas[PokemonAttack].Name + " Utilise son attaque spéciale : " + 
+                      PokemonDataBaseManager.PokemonDataBase.datas[PokemonAttack].PsychickAttacksList[PsychicUsed].AttackName);
+            if (PokemonDataBaseManager.PokemonDataBase.datas[PokemonAttack].PsychickAttacksList[PsychicUsed]
+                    .AttackID == 12)
+            {
+                Hypnotised = true;
+                SkipTurn = Random.Range(1, 3);
+                yield return new WaitForSeconds(1.2f);
+
+                SpawnText(PokemonDataBaseManager.PokemonDataBase.datas[PokemonVictim].Name + " Est Hypnotisé !");
+                yield return new WaitForSeconds(0.5f);
+
+            }else if (PokemonDataBaseManager.PokemonDataBase.datas[PokemonAttack].PsychickAttacksList[PsychicUsed].AttackID == 19)
+            {
+                Heal = true;
+                int HealInt = Random.Range(20, 50);
+
+                PokemonDataBaseManager.PokemonDataBase.datas[PokemonAttack].stats.pv += HealInt;
+                SpawnText(PokemonDataBaseManager.PokemonDataBase.datas[PokemonAttack].Name + " Se regénère de " + HealInt +" Hp");
+            }
+            
+            AttackAmount = PokemonDataBaseManager.PokemonDataBase.datas[PokemonAttack].stats.atkSpe + PokemonDataBaseManager.PokemonDataBase.datas[PokemonAttack].PsychickAttacksList[PsychicUsed].AttackDamage ;
             SpecialUsed = true;
+            
+            if (Random.Range(0, 2) == 1)
+            {
+                print("Calcul Failed");
+                int randomPrecision = Random.Range(0, 20);
+                if (PokemonDataBaseManager.PokemonDataBase.datas[PokemonAttack].PsychickAttacksList[PsychicUsed]
+                        .AttackPrecision < randomPrecision)
+                {
+                    AttackFailed = true;
+                }
+            }
         }
         else
-        { 
-            SpawnText(PokemonDataBaseManager.PokemonDataBase.datas[PokemonAttack].Name +" Utilise une attacke physique ");
-            AttackAmount = PokemonDataBaseManager.PokemonDataBase.datas[PokemonAttack].stats.atk;
+        {
+                       int RandomAttacke = Random.Range(0,
+                            PokemonDataBaseManager.PokemonDataBase.datas[PokemonAttack].PhysicalAttacksList.Length);
+                        SpawnText(PokemonDataBaseManager.PokemonDataBase.datas[PokemonAttack].Name + " Utilise une attacke physique : " + PokemonDataBaseManager.PokemonDataBase.datas[PokemonAttack].PhysicalAttacksList[RandomAttacke].AttackName);
+            AttackAmount = PokemonDataBaseManager.PokemonDataBase.datas[PokemonAttack].stats.atk + PokemonDataBaseManager.PokemonDataBase.datas[PokemonAttack].PhysicalAttacksList[RandomAttacke].AttackDamage;
+            
+            if (Random.Range(0, 2) == 1)
+            {
+                print("Calcul Failed");
+                int randomPrecision = Random.Range(0, 20);
+                if (PokemonDataBaseManager.PokemonDataBase.datas[PokemonAttack].PhysicalAttacksList[RandomAttacke]
+                        .AttackPrecision < randomPrecision)
+                {
+                    AttackFailed = true;
+                }
+            }
         }
 
         yield return new WaitForSeconds(2.2f);
-        if (Random.Range(0, 4) == 1)
+
+
+        if (Random.Range(0, 3) == 1 && !AttackFailed && !Hypnotised && !Heal)
         {
-            ShieldUsed = true;
+            ShieldUsed = false;
+
             if (SpecialUsed)
             {
                 if (AttackAmount > PokemonDataBaseManager.PokemonDataBase.datas[PokemonVictim].stats.defSpe)
                 {
                     SpawnText(PokemonDataBaseManager.PokemonDataBase.datas[PokemonVictim].Name + " Essaye de se défendre de l'attaque spéciale et ne prend que " + (AttackAmount - PokemonDataBaseManager.PokemonDataBase.datas[PokemonVictim].stats.defSpe) + " dégats");
-                    StartCoroutine (Damage(AttackAmount - AttackAmount - PokemonDataBaseManager.PokemonDataBase.datas[PokemonVictim].stats.def, PokemonVictim));
+                    StartCoroutine (Damage( AttackAmount - PokemonDataBaseManager.PokemonDataBase.datas[PokemonVictim].stats.def, PokemonVictim));
                 }
                 else
                 {
@@ -114,28 +169,56 @@ public class PokemonFightMangaer : MonoBehaviour
             {
                 if (AttackAmount > PokemonDataBaseManager.PokemonDataBase.datas[PokemonVictim].stats.def)
                 {
+                    SpecialUsed = false;
+
                     SpawnText(PokemonDataBaseManager.PokemonDataBase.datas[PokemonVictim].Name + " Essaye de se défendre et ne prend que " + (AttackAmount - PokemonDataBaseManager.PokemonDataBase.datas[PokemonVictim].stats.def) + " dégats");
-                    StartCoroutine (Damage(AttackAmount - AttackAmount - PokemonDataBaseManager.PokemonDataBase.datas[PokemonVictim].stats.def, PokemonVictim));
+                    StartCoroutine (Damage(AttackAmount - PokemonDataBaseManager.PokemonDataBase.datas[PokemonVictim].stats.def, PokemonVictim));
+
                 }
                 else
                 {
                     StartCoroutine (Damage(0, PokemonVictim));
-
                     SpawnText(PokemonDataBaseManager.PokemonDataBase.datas[PokemonVictim].Name + " Pare l'attaque entièrement");
                 }
             }
         }
-        else
+        else if(!Hypnotised && !Heal)
         {
-            SpawnText(PokemonDataBaseManager.PokemonDataBase.datas[PokemonAttack].Name + " Inflige " + AttackAmount + " dégats");
-            StartCoroutine (Damage(AttackAmount , PokemonVictim));        
+            if (AttackFailed)
+            {
+                AttackFailed = false;
+                SpawnText("L'attaque de !" +PokemonDataBaseManager.PokemonDataBase.datas[PokemonAttack].Name + " a échoué !!" ); 
+            }
+            else
+            {
+                SpawnText(PokemonDataBaseManager.PokemonDataBase.datas[PokemonAttack].Name + " Inflige " + AttackAmount + " dégats");
+                StartCoroutine (Damage(AttackAmount , PokemonVictim));
+            }
+
+        }else if (Hypnotised)
+        {
+            Hypnotised = false;
         }
         yield return new WaitForSeconds(2.2f);
-        int NewVictim = PokemonVictim;
-        PokemonVictim = PokemonAttack;
-        PokemonAttack = NewVictim;
-        SpawnText("C'est autour de " + PokemonDataBaseManager.PokemonDataBase.datas[PokemonAttack].Name + " d'attaquer !");
-        StartCoroutine("Attack");
+
+        if (SkipTurn > 0)
+        {
+            SkipTurn--;
+
+            SpawnText(PokemonDataBaseManager.PokemonDataBase.datas[PokemonVictim].Name + "est hypnotisé et jouera pas ! C'est autour de " + PokemonDataBaseManager.PokemonDataBase.datas[PokemonAttack].Name +
+                      " d'attaquer !");
+            StartCoroutine("Attack");
+        }
+        else
+        {
+            Heal = false;
+            int NewVictim = PokemonVictim;
+            PokemonVictim = PokemonAttack;
+            PokemonAttack = NewVictim;
+            SpawnText("C'est autour de " + PokemonDataBaseManager.PokemonDataBase.datas[PokemonAttack].Name +
+                      " d'attaquer !");
+            StartCoroutine("Attack");
+        }
     }
 
     public void SpawnText(string Text)
@@ -146,6 +229,7 @@ public class PokemonFightMangaer : MonoBehaviour
 
     IEnumerator Damage(int AttackAmount, int IDPokemonVictim)
     {
+
         FightAnim.SetBool("Attack", true);
         FightAnim.SetBool("ShieldUsed", ShieldUsed);
         if (PokemonAttack == IndexPokemon1)
@@ -162,11 +246,19 @@ public class PokemonFightMangaer : MonoBehaviour
             FightAnim.SetInteger("PokemonVictim", 1);
         }
 
-        print("Dégat");
+        if (PokemonDataBaseManager.PokemonDataBase.datas[PokemonVictim].MyWeakness ==
+            PokemonDataBaseManager.PokemonDataBase.datas[PokemonAttack].MyType)
+        {
+            SpawnText("L'attaque est super efficace ! + " + AttackAmount + " dégats !!");
+            AttackAmount *= 2;
+
+        }
         PokemonDataBaseManager.PokemonDataBase.datas[IDPokemonVictim].stats.pv -= AttackAmount;
+
         yield return new WaitForSeconds(0.2f);
-        SpecialUsed = false;
         FightAnim.SetBool("Attack", false);
+        SpecialUsed = false;
+
         ShieldUsed = false;
         FightAnim.SetBool("ShieldUsed", ShieldUsed);
     }
